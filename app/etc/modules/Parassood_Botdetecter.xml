@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Parassood_Botdetecter>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Parassood_Botdetecter>
+    </modules>
+</config>

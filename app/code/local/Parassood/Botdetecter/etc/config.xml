@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Parassood_Botdetecter>
+            <version>0.0.1</version>
+        </Parassood_Botdetecter>
+    </modules>
+    <global>
+        <models>
+            <botdetecter>
+                <class>Parassood_Botdetecter_Model</class>
+            </botdetecter>          
+        </models>      
+        <events>
+            <controller_front_init_before>
+                <observers>
+                    <botdetect_order_obsever>
+                        <type>singleton</type>
+                        <class>botdetecter/observer</class>
+                        <method>filterBot</method>
+                    </botdetect_order_obsever>
+                </observers>
+            </controller_front_init_before>
+        </events>
+    </global>  
+</config>
+
+
